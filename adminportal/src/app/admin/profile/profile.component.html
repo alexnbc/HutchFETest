@@ -1,0 +1,49 @@
+<div *ngIf="data" class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>{{title}}</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <form>
+          <div class="form-group row">
+            <label for="hutchId" class="col-4 col-form-label">Hutch ID:</label>
+            <div class="col-8">
+              <input [value]="data.hutchId" id="hutchId" name="hutchId" placeholder="Hutch ID" class="form-control here" required="required"
+                type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="appId" class="col-4 col-form-label">App ID:</label>
+            <div class="col-8">
+              <input [value]="data.appId" id="appId" name="appId" placeholder="App ID" class="form-control here" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="lastname" class="col-4 col-form-label">Device ID</label>
+            <div class="col-8">
+              <input [value]="data.deviceId" id="lastname" name="lastname" placeholder="Last Name" class="form-control here" type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="social" class="col-4 col-form-label">Social Name:</label>
+            <div class="col-8">
+              <input [value]="data.socialName" id="social" name="social" placeholder="Social name" class="form-control here" required="required"
+                type="text">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="loginDate" class="col-4 col-form-label">Last login date:</label>
+            <div class="col-8">
+              <input [value]="data.lastLoginDate | date: 'medium'" id="loginDate" name="loginDate" placeholder="Login date" class="form-control here" required="required"
+                type="text">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

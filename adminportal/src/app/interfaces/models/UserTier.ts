@@ -14,7 +14,7 @@ export interface UserTier {
     easyMoneyRacesAttempted: number;
     easyMoneyRaceLastWon: Date;
     easyMoneyRaceLastAttempt: Date;
-    dailyRacesWon: number
+    dailyRacesWon: number;
     dailyRacesAttempted: number;
     dailyRaceLastWon: Date;
     dailyRaceLastAttempt: Date;
@@ -31,7 +31,7 @@ export interface UserTier {
     bossLadderRacesAttempted: number;
     bossLadderRaceLastWon: Date;
     bossLadderRaceLastAttempt: Date;
-    dailyClassRacesWon: number
+    dailyClassRacesWon: number;
     dailyClassRacesAttempted: number;
     dailyClassRaceLastWon: Date;
     dailyClassRaceLastAttempt: Date;
